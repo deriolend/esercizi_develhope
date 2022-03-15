@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Form Required </title>
+        </head>
+        <body>
+    		<form action="">
+                <fieldset>
+                    <p>
+                        <label>EMAIL</label>
+                            <input type="email" id="email" autofocus required/>
+                        <label>PASSWORD</label>    
+                            <input type="password" id="password" value="" autofocus required/>
+                    </p>
+                    <p>
+                        <label>NOME</label>
+                            <input type="text" id="txtnome"required/>
+                        <label>COGNOME</label>
+                            <input type="text" id="txtnome"required/>
+                        <label>DATA DI NASCITA</label>
+                            <input type="date" id="data" required/>
+                        <label>TELEFONO</label>
+                            <input type="tel" id="numbers" onkeypress="return" required/>
+                    </p>
+                    <p>
+                        <label>Quale piano preferisci?</label><br/>
+                        <select id="selezione" required>
+                            <option value="free">Piano Free</option>
+                            <option value="low price">Piano a poco prezzo</option>
+                            <option value="medium price">Piano a prezzo alto</option>
+                            <option value="high price">Piano a prezzo smodato</option>
+                        </select>
+                    </p>
+                    <p> Vuoi i vantaggi PRO?
+                        <p>
+                            <input type="radio" name="vantaggi" id="si" value="si"/> SI
+                        </p>
+                        <p>
+                           <input type="radio" name="vantaggi" id="no" value="no"/> NO 
+                        </p>
+                    </p>
+                    <p>
+                        <label>CARTA DI CREDITO</label>
+                            <input type="text" id="credit card" minlenght="8" maxlength="16" onkeypress="return numbersonly" autofocus required/>
+                        <label>CVV</label>
+                            <input type="text" id="cvv" maxlength="3" onkeypress="return numbersonly" autofocus required/>
+                        <label>DATA DI SCADENZA</label>
+                            <input type="date" id="date" name="data" min="2022-01-30" autofocus required/>
+                    </p>
+                    <p>
+                        <label>INDIRIZZO DI FATTURAZIONE</label>
+                            <input type="text" id="txtnome" required/>
+                    </p>
+                    <button type="button" class="invia">INVIA</button>
+				</fieldset>
+			</form>
+        </body>
+    </html>
