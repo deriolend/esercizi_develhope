@@ -1,0 +1,30 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+#yellow {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+}
+
+#blue {
+    grid-column: 1;
+    grid-row: 2 / 5;
+}
+
+#orange {
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+}
+
+#red {
+    grid-column: 2 / 5;
+    grid-row: 3 / 4;
+}
+
+#green {
+    grid-column: 2 / 5;
+    grid-row: 4 / 5;
+}

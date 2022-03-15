@@ -1,0 +1,55 @@
+body {
+  width: 60em;
+  margin: 0 auto;
+}
+
+section {
+  padding: 2em;
+  margin: 1em;
+}
+
+#green {
+  background-color: #8ffda7;
+}
+
+#orange {
+  background-color: #ffc788;
+}
+
+#yellow {
+  background-color: #ffff92;
+}
+
+#red {
+  background-color: #ff919c;
+}
+
+#blue {
+  background-color: #98d2ff;
+}
+
+ul {
+  display:flex;
+  justify-content: space-around;
+  padding: 25px;
+}
+
+li {
+  background-color: white;
+  width: 5rem;
+  padding: 1em;
+  display: inline-block;
+  margin: 1em;
+}
+
+#yellow > ul > li:first-child {
+  width: 15rem;
+}
+
+#red > ul {
+  flex-direction: row-reverse;
+}
+
+#red > ul > li {
+  width: 4.5rem;
+}

@@ -1,0 +1,43 @@
+body {
+	font-family: monospace;
+}
+
+#expand-toggle {
+	display: none;
+}
+
+#expand-toggle:checked ~ table>tbody>.expandable{
+	visibility: visible;
+	background: gray;
+	color: white;
+}
+
+#expand-toggle:checked ~ #expand-btn {
+	background-color: #88ff88;
+}
+
+#expand-toggle:checked ~ label #show-rows {
+	display: none;
+}
+
+#expand-toggle:checked ~ label #hide-rows {
+	display: contents;
+}
+
+#hide-rows {
+	display: none;
+}
+
+.expandable {
+	visibility: collapse;
+}
+
+#expand-btn {
+	display: inline-block;
+	margin-top: 12px;
+	padding: 6px 12px;
+	background-color: #ff8888;
+	border: 1px solid;
+	border-radius: 3px;
+	transition: 0.3s;
+} 

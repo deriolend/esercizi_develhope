@@ -1,0 +1,37 @@
+body {
+    background-color: #011212;
+    --first-color: #16f;
+    --second-color: #ff7;
+    --first-width: 180px;
+    --first-height: 180px;
+}
+
+.ball, .ball1, .ball2, .ball3 {
+    margin: 10px;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: #ff8800;
+    border-radius: 50px;
+}
+
+.ball1 {
+    width: 100px;
+    height: 100px;
+    background-color: var(--first-color);
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--second-color);
+}
+
+.ball2 {
+    width: var(--first-width);
+    height: var(--first-height);
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--second-color);
+    border-radius: 90px;
+}
