@@ -13,25 +13,11 @@
 </html>
 
 <script>
-  let title = document.getElementById("fetch-post");
-  let post = document.getElementById("post-title");
-  function setData() {
-    fetch("https://jsonplaceholder.typicode.com/posts/1")
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        console.log(data);
-        localStorage.setItem(data.title, JSON.stringify(data));
-        return data;
-      })
-      .then((data) => {
-        localStorage.getItem(data.title);
-        let newTitle = data.title;
-        post.append(newTitle);
-      });
+  const call = document.getElementById("fetch-post");
+  call.addEventListener("click", paste);
+  async function paste() {
+    let copy = await JSON.parse(localStorage.getItem("value"));
+    let title = await document.getElementById("post-title");
+    title.innerText = copy.title;
   }
-  title.addEventListener("click", setData);
-
-
 </script>
