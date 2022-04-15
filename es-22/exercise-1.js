@@ -4,10 +4,10 @@ const person = {
   age: 25,
   job: "Web Developer",
   fullName() {
-    return person.firstName + " " + person.lastName;
+    return this.firstName + " " + this.lastName;
   },
   info() {
-    return this.fullName() + "," + " " + person.age + " - " + person.job;
+    return this.fullName() + "," + " " + this.age + " - " + this.job;
   },
 };
 
