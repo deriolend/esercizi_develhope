@@ -4,4 +4,6 @@ const person = {
   age: 25
 }
 
-console.log(Object.values(person))
+for (let values of Object.values(person)) {
+    console.log(values);
+}
